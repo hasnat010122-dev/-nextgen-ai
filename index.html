@@ -1,486 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Gen AI - AI-Powered Solutions for Tomorrow's Problems</title>
-    <meta name="description" content="Next Gen AI provides cutting-edge AI-powered solutions including MedStock Pro and more innovative products">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0d12">
+  <meta name="description" content="Next Gen AI designs and deploys production-ready AI systems for healthcare, operations, vision and business automation. Explore MedStock Pro, our intelligent pharmacy operations platform.">
+  <meta property="og:title" content="Next Gen AI — Applied intelligence for real operations">
+  <meta property="og:description" content="AI systems designed around real workflows, measurable outcomes and reliable deployment.">
+  <meta property="og:type" content="website">
+  <title>Next Gen AI — Applied intelligence for real operations</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loader" id="loader">
-        <div class="loader-content">
-            <div class="loader-logo">
-                <div class="logo-cube">
-                    <div class="cube-face"></div>
-                    <div class="cube-face"></div>
-                    <div class="cube-face"></div>
-                </div>
-            </div>
-            <div class="loader-text">Next Gen AI</div>
-            <div class="loader-bar">
-                <div class="loader-progress"></div>
-            </div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement" role="status">
+    <div class="announcement-inner">
+      <span class="announcement-label">Now live</span>
+      <span>MedStock Pro — intelligent pharmacy operations, from scan to stock.</span>
+      <a href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">Open product <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Next Gen AI home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Next Gen AI</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="projects.html">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#company">Company</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="text-link desktop-only" href="#contact">Talk to us</a>
+        <a class="button button-dark button-small desktop-only" href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">Launch MedStock Pro <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-icon">
-                    <div class="logo-shape"></div>
-                </div>
-                <span class="logo-text">Next Gen AI</span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-cta">
-                <a href="#contact" class="btn-primary">Get Started</a>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#capabilities">Capabilities</a>
+      <a href="projects.html">Projects</a>
+      <a href="#approach">Approach</a>
+      <a href="#company">Company</a>
+      <a href="#contact">Talk to us</a>
+      <a class="button button-dark" href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">Launch MedStock Pro <span aria-hidden="true">↗</span></a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
+  <main id="main">
     <section class="hero" id="home">
-        <div class="hero-canvas" id="heroCanvas"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                <span>AI-Powered Innovation</span>
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">Building the</span>
-                <span class="title-line gradient-text">Future with AI</span>
-            </h1>
-            <p class="hero-description">
-                We craft intelligent solutions that transform businesses and solve complex problems with cutting-edge artificial intelligence technology.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary btn-large">
-                    <span>Explore Our Work</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#contact" class="btn-secondary btn-large">
-                    <span>Get in Touch</span>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="15">15+</div>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="98">98%</div>
-                    <div class="stat-label">Client Satisfaction</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="8">8+</div>
-                    <div class="stat-label">AI Solutions</div>
-                </div>
-            </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Applied AI studio · Pakistan</div>
+          <h1>AI systems that work in the <em>real world.</em></h1>
+          <p>We design and deploy intelligent software for healthcare, industry and complex operations—turning documents, decisions and repetitive workflows into reliable digital systems.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="projects.html">Explore our projects <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#capabilities">See what we build <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Core focus areas">
+            <span>Healthcare intelligence</span>
+            <span>Industrial AI</span>
+            <span>Operational software</span>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-text">Scroll to explore</div>
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
+
+        <div class="intelligence-map reveal delay-1" aria-label="Illustration showing an AI operations system">
+          <div class="map-topline">
+            <span>OPERATIONS INTELLIGENCE</span>
+            <span class="live-state"><i></i> ONLINE</span>
+          </div>
+          <div class="map-stage">
+            <svg class="map-connections" viewBox="0 0 600 560" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M300 280 C220 250 170 180 120 118"></path>
+              <path d="M300 280 C400 240 445 170 492 116"></path>
+              <path d="M300 280 C220 330 180 400 118 444"></path>
+              <path d="M300 280 C390 330 430 405 492 446"></path>
+            </svg>
+            <div class="map-node node-center">
+              <span class="node-icon large-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"></path></svg>
+              </span>
+              <strong>AI Core</strong>
+              <small>Orchestration layer</small>
             </div>
+            <div class="map-node node-a">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM15 3v5h4M8 12h8M8 16h6"></path></svg></span>
+              <strong>Documents</strong><small>OCR · extraction</small>
+            </div>
+            <div class="map-node node-b">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"></path></svg></span>
+              <strong>Decisions</strong><small>Signals · forecasts</small>
+            </div>
+            <div class="map-node node-c">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11"></path></svg></span>
+              <strong>Workflows</strong><small>Rules · automation</small>
+            </div>
+            <div class="map-node node-d">
+              <span class="node-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg></span>
+              <strong>Systems</strong><small>Cloud · offline</small>
+            </div>
+            <div class="signal-pulse pulse-one"></div>
+            <div class="signal-pulse pulse-two"></div>
+          </div>
+          <div class="map-footer">
+            <div><span>MODELS</span><strong>Task-specific</strong></div>
+            <div><span>DELIVERY</span><strong>Production-ready</strong></div>
+            <div><span>PRIORITY</span><strong>Measurable value</strong></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Us</span>
-                <h2 class="section-title">
-                    Pioneering <span class="gradient-text">AI Innovation</span>
-                </h2>
-                <p class="section-subtitle">
-                    We're a team of passionate AI engineers and developers building intelligent solutions that make a real difference.
-                </p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card" data-aos="fade-up">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI-First Approach</h3>
-                    <p>Every solution we build leverages the power of artificial intelligence to deliver smarter, faster, and more accurate results.</p>
-                </div>
-                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Innovation Driven</h3>
-                    <p>We stay at the forefront of AI technology, constantly exploring new possibilities to solve tomorrow's challenges today.</p>
-                </div>
-                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Client Focused</h3>
-                    <p>Your success is our priority. We work closely with you to understand your needs and deliver solutions that exceed expectations.</p>
-                </div>
-                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Reliable & Secure</h3>
-                    <p>Our solutions are built with enterprise-grade security and reliability, ensuring your data and operations are always protected.</p>
-                </div>
-            </div>
-        </div>
+    <section class="signal-strip" aria-label="Next Gen AI principles">
+      <div class="container signal-grid">
+        <div><span>01</span><strong>Built around operations</strong><p>Technology follows the workflow—not the other way around.</p></div>
+        <div><span>02</span><strong>Human-in-the-loop</strong><p>Critical decisions remain visible, reviewable and controlled.</p></div>
+        <div><span>03</span><strong>Designed to deploy</strong><p>From data and UX to integrations, security and support.</p></div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Services</span>
-                <h2 class="section-title">
-                    AI Solutions for <span class="gradient-text">Every Challenge</span>
-                </h2>
-                <p class="section-subtitle">
-                    From healthcare to business automation, we provide comprehensive AI-powered solutions tailored to your needs.
-                </p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80" alt="Healthcare AI" class="service-bg-image">
-                        <div class="service-gradient"></div>
-                        <i class="fas fa-pills"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Healthcare AI</h3>
-                        <p>Intelligent pharmacy management, medical inventory tracking, and healthcare automation solutions.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Smart Inventory Management</li>
-                            <li><i class="fas fa-check"></i> Automated Billing Systems</li>
-                            <li><i class="fas fa-check"></i> Predictive Analytics</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="Business Automation" class="service-bg-image">
-                        <div class="service-gradient gradient-2"></div>
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Business Automation</h3>
-                        <p>Streamline your operations with intelligent automation that saves time and reduces errors.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Process Automation</li>
-                            <li><i class="fas fa-check"></i> Data Analysis</li>
-                            <li><i class="fas fa-check"></i> Workflow Optimization</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Predictive Analytics" class="service-bg-image">
-                        <div class="service-gradient gradient-3"></div>
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Predictive Analytics</h3>
-                        <p>Make data-driven decisions with advanced AI models that predict trends and outcomes.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Market Forecasting</li>
-                            <li><i class="fas fa-check"></i> Risk Assessment</li>
-                            <li><i class="fas fa-check"></i> Performance Optimization</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1527430253228-e93688616381?w=800&q=80" alt="Computer Vision" class="service-bg-image">
-                        <div class="service-gradient gradient-4"></div>
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Computer Vision</h3>
-                        <p>Advanced image and video analysis for quality control, security, and automation.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> OCR Technology</li>
-                            <li><i class="fas fa-check"></i> Object Detection</li>
-                            <li><i class="fas fa-check"></i> Image Recognition</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="section capabilities" id="capabilities">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">Capabilities</span>
+            <h2>From AI opportunity<br>to operating system.</h2>
+          </div>
+          <p>We combine product strategy, applied machine learning and production engineering to build useful systems—not isolated demos.</p>
         </div>
+
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <div class="capability-number">01</div>
+            <div class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM15 3v5h4M8 12h8M8 16h5"></path></svg></div>
+            <h3>Document intelligence</h3>
+            <p>Convert labels, invoices, reports and forms into structured, validated data your software can act on.</p>
+            <ul><li>OCR and field extraction</li><li>Validation workflows</li><li>Human review interfaces</li></ul>
+          </article>
+          <article class="capability-card reveal delay-1">
+            <div class="capability-number">02</div>
+            <div class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5M8 17h7"></path></svg></div>
+            <h3>Operational software</h3>
+            <p>Purpose-built platforms that connect teams, records, transactions and day-to-day decisions.</p>
+            <ul><li>Role-based applications</li><li>Offline-ready workflows</li><li>Reporting and audit trails</li></ul>
+          </article>
+          <article class="capability-card reveal delay-2">
+            <div class="capability-number">03</div>
+            <div class="capability-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"></path></svg></div>
+            <h3>Decision intelligence</h3>
+            <p>Surface the signals that matter with forecasting, anomaly detection and clear operational analytics.</p>
+            <ul><li>Demand forecasting</li><li>Risk and expiry signals</li><li>Management dashboards</li></ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Projects</span>
-                <h2 class="section-title">
-                    Featured <span class="gradient-text">AI Solutions</span>
-                </h2>
-                <p class="section-subtitle">
-                    Explore our portfolio of innovative AI-powered products that are transforming industries.
-                </p>
-            </div>
-            <div class="projects-showcase">
-                <div class="project-card featured" data-aos="fade-up">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <span class="project-badge">Featured Project</span>
-                        </div>
-                        <div class="project-visual">
-                            <div class="visual-icon">
-                                <i class="fas fa-prescription-bottle-medical"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Healthcare</span>
-                            <span class="tag">AI/ML</span>
-                            <span class="tag">PWA</span>
-                        </div>
-                        <h3>MedStock Pro</h3>
-                        <p class="project-description">
-                            A revolutionary AI-powered pharmacy management system with intelligent OCR, automated billing, inventory tracking, and predictive analytics. Built as a Progressive Web App for seamless offline-first experience.
-                        </p>
-                        <div class="project-features">
-                            <div class="feature">
-                                <i class="fas fa-camera"></i>
-                                <span>AI-Powered OCR</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-cloud"></i>
-                                <span>Cloud Sync</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>PWA Support</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                        <div class="project-stats">
-                            <div class="stat">
-                                <div class="stat-value">95%</div>
-                                <div class="stat-label">OCR Accuracy</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">24/7</div>
-                                <div class="stat-label">Availability</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-value">100%</div>
-                                <div class="stat-label">Offline Support</div>
-                            </div>
-                        </div>
-                        <a href="#" class="project-link">
-                            <span>View Project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card small" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h4>AI Chatbot Platform</h4>
-                        <p>Intelligent conversational AI for customer support and engagement.</p>
-                        <span class="project-status">Coming Soon</span>
-                    </div>
-                    <div class="project-card small" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h4>Smart E-Commerce</h4>
-                        <p>AI-driven product recommendations and inventory optimization.</p>
-                        <span class="project-status">Coming Soon</span>
-                    </div>
-                    <div class="project-card small" data-aos="fade-up" data-aos-delay="300">
-                        <div class="project-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h4>AI Learning Platform</h4>
-                        <p>Personalized education with adaptive learning algorithms.</p>
-                        <span class="project-status">Coming Soon</span>
-                    </div>
-                </div>
-            </div>
+    <section class="section selected-projects" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="kicker">Selected projects</span>
+            <h2>Intelligence shaped<br>for each environment.</h2>
+          </div>
+          <div class="projects-heading-copy">
+            <p>Our work spans healthcare operations, medical intelligence, industrial systems and enterprise workflows. Each project begins with a specific operational problem—not a generic AI feature.</p>
+            <a class="inline-arrow" href="projects.html">View the complete project portfolio <span aria-hidden="true">→</span></a>
+          </div>
         </div>
+
+        <div class="selected-project-grid">
+          <article class="selected-project project-featured reveal">
+            <div class="project-card-copy">
+              <div class="project-meta"><span class="status-live"><i></i> Live product</span><span>Healthcare · Pharmacy operations</span></div>
+              <h3>MedStock Pro</h3>
+              <p>An intelligent pharmacy operations platform that connects medicine capture, batch-aware inventory, billing and decision-ready analytics.</p>
+              <div class="project-card-links">
+                <a class="inline-arrow" href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">Open live product <span aria-hidden="true">↗</span></a>
+                <a class="quiet-link" href="projects.html#medstock-project">Project overview</a>
+              </div>
+            </div>
+            <div class="project-visual project-visual-medstock" aria-hidden="true">
+              <div class="visual-window">
+                <div class="visual-window-top"><i></i><i></i><i></i><span>MedStock Pro</span></div>
+                <div class="visual-window-body">
+                  <div class="visual-side"><b></b><b></b><b></b><b></b></div>
+                  <div class="visual-content"><div class="visual-metrics"><i></i><i></i><i></i></div><div class="visual-chart"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M0 78C38 64 48 77 82 55s50-38 79-21 44 42 72 5 43-18 67-31"></path></svg></div></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="selected-project reveal delay-1">
+            <div class="project-mini-visual visual-clinic" aria-hidden="true"><span>01</span><div><i></i><i></i><i></i></div></div>
+            <div class="project-meta"><span class="status-build">In development</span><span>Healthcare operations</span></div>
+            <h3>Clinical Operations OS</h3>
+            <p>A role-based system for patient flow, consultation, procedures, billing and operational coordination in modern clinics.</p>
+            <a class="quiet-link" href="projects.html#clinical-operations">Explore direction <span>→</span></a>
+          </article>
+
+          <article class="selected-project reveal delay-2">
+            <div class="project-mini-visual visual-medical-ai" aria-hidden="true"><span>02</span><div class="scan-frame"><b></b><b></b><b></b></div></div>
+            <div class="project-meta"><span class="status-research">Research track</span><span>Medical intelligence</span></div>
+            <h3>Medical Document Intelligence</h3>
+            <p>Human-reviewed extraction and organization of information from medicine labels, reports and operational documents.</p>
+            <a class="quiet-link" href="projects.html#medical-intelligence">Explore direction <span>→</span></a>
+          </article>
+
+          <article class="selected-project reveal delay-3">
+            <div class="project-mini-visual visual-industry" aria-hidden="true"><span>03</span><div class="industry-line"><i></i><i></i><i></i><i></i></div></div>
+            <div class="project-meta"><span class="status-explore">Exploration</span><span>Industrial AI</span></div>
+            <h3>Industrial Vision & Reliability</h3>
+            <p>Applied computer vision and predictive signals for inspection, equipment awareness and more consistent industrial operations.</p>
+            <a class="quiet-link" href="projects.html#industrial-vision">Explore direction <span>→</span></a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-content" data-aos="fade-right">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">
-                        Let's Build Something <span class="gradient-text">Amazing Together</span>
-                    </h2>
-                    <p class="contact-description">
-                        Ready to transform your business with AI? We'd love to hear about your project and discuss how we can help.
-                    </p>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4>Email Us</h4>
-                                <p>contact@nextaigen.org</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4>Call Us</h4>
-                                <p>+92 329 6676307</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4>Location</h4>
-                                <p>Pakistan</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary btn-large btn-full">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <section class="section product-section" id="medstock">
+      <div class="container">
+        <div class="product-intro reveal">
+          <div>
+            <span class="product-wordmark"><i></i> FLAGSHIP PROJECT · MEDSTOCK PRO</span>
+            <h2>Pharmacy operations,<br>made intelligent.</h2>
+          </div>
+          <div class="product-intro-copy">
+            <p>MedStock Pro brings medicine capture, inventory, billing and pharmacy intelligence into one focused operating environment.</p>
+            <a class="inline-arrow" href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">Visit MedStock Pro <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
+
+        <div class="product-window reveal">
+          <div class="window-chrome">
+            <div class="window-brand"><span class="mini-mark">M</span><strong>MedStock Pro</strong></div>
+            <div class="window-search">Search medicine, batch or supplier</div>
+            <div class="window-user">HA</div>
+          </div>
+          <div class="window-body">
+            <aside class="window-sidebar">
+              <span class="active">Overview</span><span>Inventory</span><span>Scan & extract</span><span>Billing</span><span>Purchasing</span><span>Reports</span>
+            </aside>
+            <div class="window-main">
+              <div class="window-heading"><div><small>OPERATIONS OVERVIEW</small><h3>Good morning, Hasnat.</h3></div><button type="button">+ Add stock</button></div>
+              <div class="metric-grid">
+                <div><span>Stock value</span><strong>Rs 2.84m</strong><small class="positive">↑ 8.2% this month</small></div>
+                <div><span>Low stock</span><strong>18</strong><small>Needs attention</small></div>
+                <div><span>Near expiry</span><strong>07</strong><small>Next 60 days</small></div>
+                <div><span>Today’s sales</span><strong>Rs 84.6k</strong><small class="positive">↑ 12.4%</small></div>
+              </div>
+              <div class="dashboard-grid">
+                <div class="chart-card">
+                  <div class="card-line"><strong>Sales movement</strong><span>Last 7 days</span></div>
+                  <svg viewBox="0 0 520 220" preserveAspectRatio="none" aria-label="Sample sales chart">
+                    <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2667ff" stop-opacity=".24"></stop><stop offset="1" stop-color="#2667ff" stop-opacity="0"></stop></linearGradient></defs>
+                    <path class="chart-gridline" d="M0 45H520M0 105H520M0 165H520"></path>
+                    <path class="chart-area" d="M0 165 C45 150 70 164 105 128 S175 86 210 110 S275 155 315 96 S375 36 415 64 S470 108 520 35 V220 H0Z"></path>
+                    <path class="chart-line" d="M0 165 C45 150 70 164 105 128 S175 86 210 110 S275 155 315 96 S375 36 415 64 S470 108 520 35"></path>
+                  </svg>
+                </div>
+                <div class="alerts-card">
+                  <div class="card-line"><strong>Inventory signals</strong><span>Live</span></div>
+                  <div class="alert-row"><i class="alert-red"></i><div><strong>Amoxicillin 500mg</strong><span>4 units remaining</span></div><b>Critical</b></div>
+                  <div class="alert-row"><i class="alert-amber"></i><div><strong>Panadol Extra</strong><span>Expires in 42 days</span></div><b>Review</b></div>
+                  <div class="alert-row"><i class="alert-blue"></i><div><strong>Insulin Glargine</strong><span>Demand trending up</span></div><b>Forecast</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-feature-row">
+          <div class="reveal"><span>01</span><h3>Scan medicine data</h3><p>Capture medicine names, strengths, batches, prices and expiry information from a label or package.</p></div>
+          <div class="reveal delay-1"><span>02</span><h3>Control stock precisely</h3><p>Track batches, movement, low-stock thresholds and expiry risk in one operational record.</p></div>
+          <div class="reveal delay-2"><span>03</span><h3>Bill with confidence</h3><p>Create fast, consistent invoices with live inventory impact and a reliable transaction history.</p></div>
+          <div class="reveal delay-3"><span>04</span><h3>Act on signals</h3><p>Use focused analytics to understand sales, purchasing needs and operational exceptions.</p></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-icon">
-                            <div class="logo-shape"></div>
-                        </div>
-                        <span class="logo-text">Next Gen AI</span>
-                    </div>
-                    <p class="footer-description">
-                        Building the future with intelligent AI solutions that transform businesses and solve real-world problems.
-                    </p>
-                    <div class="footer-founder">
-                        <div class="founder-badge">
-                            <i class="fas fa-user-tie"></i>
-                            <div class="founder-info">
-                                <span class="founder-label">Founded by</span>
-                                <span class="founder-name">Hasnat Ahmed</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Healthcare AI</a></li>
-                            <li><a href="#">Business Automation</a></li>
-                            <li><a href="#">Predictive Analytics</a></li>
-                            <li><a href="#">Computer Vision</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Next Gen AI. All rights reserved. | Founded by <strong>Hasnat Ahmed</strong></p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
+    <section class="section ocr-lab" id="ocr-lab">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <div><span class="kicker">Product interaction</span><h2>Try the medicine<br>extraction workflow.</h2></div>
+          <p>This interactive preview demonstrates how MedStock Pro turns medicine packaging into structured inventory fields. It is a front-end simulation, not a live medical or OCR result.</p>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+        <div class="lab-shell reveal">
+          <div class="lab-controls">
+            <div class="lab-control-head"><span>INPUT / MEDICINE LABEL</span><span class="simulation-tag">INTERACTIVE PREVIEW</span></div>
+            <div class="sample-selector" role="group" aria-label="Choose a sample medicine label">
+              <button class="sample-option active" type="button" data-sample="augmentin"><span>A</span><div><strong>Augmentin</strong><small>625 mg · tablets</small></div><i>✓</i></button>
+              <button class="sample-option" type="button" data-sample="panadol"><span>P</span><div><strong>Panadol Extra</strong><small>500 mg + 65 mg</small></div><i>✓</i></button>
+              <button class="sample-option" type="button" data-sample="lipitor"><span>L</span><div><strong>Lipitor</strong><small>20 mg · tablets</small></div><i>✓</i></button>
+            </div>
+
+            <label class="upload-zone" id="uploadZone" for="labelUpload">
+              <input id="labelUpload" type="file" accept="image/*">
+              <span class="upload-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 15v5h16v-5"></path></svg></span>
+              <strong>Or choose a medicine label image</strong>
+              <small id="uploadLabel">PNG or JPG · interaction preview only</small>
+            </label>
+
+            <button class="button button-blue button-full" id="runExtraction" type="button"><span>Run extraction preview</span><span aria-hidden="true">→</span></button>
+            <p class="lab-disclaimer">Do not use this demonstration for dispensing, diagnosis or clinical decisions. All extracted fields must be verified by a qualified user.</p>
+          </div>
+
+          <div class="lab-output" aria-live="polite">
+            <div class="lab-output-head">
+              <div><span>STRUCTURED OUTPUT</span><strong id="extractionStatus">Ready to extract</strong></div>
+              <button class="copy-button" id="copyOutput" type="button" disabled>Copy JSON</button>
+            </div>
+            <div class="scan-preview" id="scanPreview">
+              <div class="medicine-pack" id="medicinePack">
+                <div class="pack-brand">Augmentin</div><div class="pack-dose">625 mg</div><div class="pack-generic">amoxicillin + clavulanate</div><div class="pack-footer">14 film-coated tablets</div>
+              </div>
+              <div class="scan-line" id="scanLine"></div>
+              <div class="scan-placeholder" id="scanPlaceholder">Select a sample and run extraction</div>
+            </div>
+            <div class="extraction-progress"><span id="extractionProgress"></span></div>
+            <div class="result-fields" id="resultFields">
+              <div><span>Medicine</span><strong>—</strong></div><div><span>Strength</span><strong>—</strong></div><div><span>Dosage form</span><strong>—</strong></div><div><span>Pack size</span><strong>—</strong></div><div><span>Batch</span><strong>—</strong></div><div><span>Expiry</span><strong>—</strong></div>
+            </div>
+            <div class="confidence-row"><span>Preview confidence</span><div><i id="confidenceBar"></i></div><strong id="confidenceValue">—</strong></div>
+          </div>
+        </div>
+
+        <div class="lab-cta reveal">
+          <div><strong>Ready to work with the full product?</strong><span>Open MedStock Pro to explore the complete pharmacy workflow.</span></div>
+          <a class="button button-dark" href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">Launch MedStock Pro <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="kicker">How we work</span><h2>Clarity before<br>complexity.</h2></div>
+          <p>Our process keeps the business problem, user workflow and deployment reality visible from the first conversation.</p>
+        </div>
+        <div class="approach-list">
+          <article class="approach-step reveal"><span>01</span><div><h3>Understand the operation</h3><p>We map users, decisions, data, exceptions and the outcome that matters.</p></div><b>DISCOVERY</b></article>
+          <article class="approach-step reveal"><span>02</span><div><h3>Prove the critical workflow</h3><p>We validate the hardest assumptions with a focused prototype and real examples.</p></div><b>VALIDATION</b></article>
+          <article class="approach-step reveal"><span>03</span><div><h3>Build the complete system</h3><p>Product design, AI, application logic and integrations move forward as one system.</p></div><b>DELIVERY</b></article>
+          <article class="approach-step reveal"><span>04</span><div><h3>Measure and improve</h3><p>We observe usage, quality and operational value—then refine what matters.</p></div><b>EVOLUTION</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section company" id="company">
+      <div class="container company-grid">
+        <div class="company-statement reveal">
+          <span class="kicker light-kicker">Next Gen AI</span>
+          <h2>We build practical intelligence for ambitious teams.</h2>
+          <p>Next Gen AI is an applied AI and software studio founded in Pakistan by Hasnat Ahmed. We focus on systems that improve real operations—especially where accuracy, speed and usability matter every day.</p>
+          <a class="button button-light" href="#contact">Start a conversation <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="company-principles reveal delay-1">
+          <div><span>01</span><strong>Useful over theatrical</strong><p>We prioritize clear value over AI for its own sake.</p></div>
+          <div><span>02</span><strong>Visible and accountable</strong><p>Users can understand, review and correct system outputs.</p></div>
+          <div><span>03</span><strong>Built for the environment</strong><p>Performance, connectivity and operational constraints shape the product.</p></div>
+          <div><span>04</span><strong>Long-term product thinking</strong><p>We design systems that can evolve without becoming fragile.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="kicker">Work with us</span>
+          <h2>Tell us what needs to work better.</h2>
+          <p>Share the workflow, problem or product you want to improve. We’ll respond with practical next steps—not a generic sales pitch.</p>
+          <div class="contact-details">
+            <a href="/cdn-cgi/l/email-protection#d2b1bdbca6b3b1a692bcb7aaa6b3bbb5b7bcfcbda0b5"><span>Email</span><strong><span class="__cf_email__" data-cfemail="f4979b9a80959780b49a918c80959d93919ada9b8693">[email&#160;protected]</span></strong></a>
+            <a href="tel:+923296676307"><span>Phone</span><strong>+92 329 6676307</strong></a>
+            <div><span>Based in</span><strong>Pakistan · working globally</strong></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="form-row">
+            <label><span>Name</span><input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label><span>Work email</span><input type="email" name="email" autocomplete="email" required placeholder="you@company.com"></label>
+          </div>
+          <label><span>Company / organization</span><input type="text" name="company" placeholder="Company name"></label>
+          <label><span>What would you like to build or improve?</span><textarea name="message" rows="5" required placeholder="A short description of the workflow, users and outcome…"></textarea></label>
+          <div class="form-footer"><p id="formStatus" role="status">Your email app will open with the enquiry pre-filled.</p><button class="button button-dark" type="submit">Send enquiry <span aria-hidden="true">→</span></button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Next Gen AI</span></a>
+        <p>Applied intelligence for real operations.</p>
+        <a class="inline-arrow footer-product" href="https://medstock.nextaigen.org/" target="_blank" rel="noopener noreferrer">MedStock Pro <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-nav">
+        <div><span>Explore</span><a href="#capabilities">Capabilities</a><a href="projects.html">All projects</a><a href="#medstock">MedStock Pro</a><a href="#ocr-lab">OCR preview</a><a href="#approach">Approach</a></div>
+        <div><span>Company</span><a href="#company">About</a><a href="#contact">Contact</a><a href="/cdn-cgi/l/email-protection#a0c3cfced4c1c3d4e0cec5d8d4c1c9c7c5ce8ecfd2c7">Email us</a></div>
+        <div><span>Connect</span><a href="#" aria-label="Next Gen AI on LinkedIn">LinkedIn</a><a href="#" aria-label="Next Gen AI on GitHub">GitHub</a><a href="#" aria-label="Next Gen AI on Instagram">Instagram</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Next Gen AI. All rights reserved.</span><span>Founded by Hasnat Ahmed · Pakistan</span></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
 </body>
 </html>

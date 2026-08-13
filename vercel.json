@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/nextgen-ai-seo-ready/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/nextgen-ai",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
